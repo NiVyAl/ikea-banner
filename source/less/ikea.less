@@ -1,29 +1,21 @@
 .ikea {
   border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   width: 240px;
   height: 400px;
+  overflow: hidden;
+  display: block;
   text-decoration: none;
-  box-sizing: border-box;
-  padding-top: 16px;
-  padding-bottom: 18px;
-  padding-right: 10px;
-  padding-left: 17px
-}
-
-.ikea__text {
-  font-family: "Verdana";
-  font-weight: 600;
-  color: black;
-  font-size: 23.56px;
-  line-height: 25.7px;
-  margin-top: 0;
-  margin-bottom: 0; // временно
+  position: relative;
+  
+  animation-name: emersion;
+  animation-duration: @emersion-duration;
+  animation-fill-mode: forwards;
 }
 
 .ikea__logo {
-  align-self: flex-end;
+  //align-self: flex-end;
+  //margin-right: 4px;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
 }
