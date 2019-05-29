@@ -1,0 +1,45 @@
+.button {
+  width: 175px;
+  //height: 41px;
+  padding: 5px 0;
+  border: 3px solid #0051ba;
+  border-radius: 15px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  font-family: "Verdana";
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: #0051ba;
+  color: white;
+}
+
+.button::before {
+  width: 60px;
+  height: 100px;
+  background-color: #ffde23;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -90px;
+  //transform: skewX(-30deg);
+  
+  animation-name: button;
+  animation-duration: 2s;
+  animation-delay: @delay-discover + 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  
+  //animation-iteration-count: infinite;
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+}

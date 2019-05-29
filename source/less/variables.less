@@ -1,2 +1,10 @@
 @book-duration: 3s;
-@emersion-duration: 5s;
+@emersion-duration: 5s; // скорость появления нового кадра
+@books-hide-delay: @emersion-duration + @book-duration/3;
+
+@delay-bookcase: @books-hide-delay + @book-duration;  //задержка выезда шкафа
+@duration-bookcase: 2s; // продолжительность выезда шкафа
+@delay-bookcase-text: @delay-bookcase + @duration-bookcase; //задержка появления текста (название книжного шкафа)
+@bookcase-hide-delay: @delay-bookcase-text + @duration-bookcase + 2s; // задержка исчезновения текста
+
+@delay-discover: @bookcase-hide-delay + @emersion-duration;

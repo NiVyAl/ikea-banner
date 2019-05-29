@@ -4,25 +4,39 @@
     <title>ikea</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   
   <body>
     <a href="#" class="ikea">
-      <div class="frame frame--books">
-        <h2 class="frame__title">Чего стоит сохранить покой в доме?</h2>
-        <div class="img-container img-container--book frame__img-container">
+      <div class="ikea__frame books">
+        <h2 class="books__title">Чего стоит сохранить покой в доме?</h2>
+        <div class="img-container img-container--book books__img-container">
           <img src="img/book-3.png" width="140" class="img-container__img img-container__img--3">
           <img src="img/book-2.png" width="115" class="img-container__img img-container__img--2">
           <img src="img/book-1.png" width="98" class="img-container__img img-container__img--1">
         </div>
       </div>
       
-      <div class="frame frame--bookcase">
-        <h2 class="product-name frame__product-name">Хемнэс</h2>
-        <p class="product-name--description">стеллаж</p>
-        <span class="price frame__price">6499.-</span>
-        <img src="img/bookcase.png">
+      <div class="ikea__frame bookcase">
+        <div class="bookcase__text">
+          <h2 class="bookcase__name">Хемнэс</h2>
+          <p class="bookcase__description">стеллаж</p>
+          <span class="bookcase__price">6499.-</span>
+        </div>    
+        <img class="bookcase__img" src="img/bookcase.png">
       </div>
+      
+      <div class="ikea__frame discover">
+        <h1 class="discover__title">Узнайте цену покоя</h1>
+        <button class="button discover__button">
+          <span class="button__text">IKEA.ru</span>
+        </button>
+        <p class="discover__description">
+          © Inter IKEA Systems B.V.2018. ООО «ИКЕА ДОМ», Московская обл., г. Химки, мкр-н ИКЕА, корп. 1, ОГРН 1065047056348.
+        </p>
+      </div>
+      
       <img src="img/logo.png" class="logo ikea__logo">
     </a>
   </body>

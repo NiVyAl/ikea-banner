@@ -1,0 +1,56 @@
+.bookcase {
+  padding: 19px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  
+  animation-name: hide;
+  animation-duration: @emersion-duration;
+  animation-fill-mode: forwards;  
+  animation-delay: @bookcase-hide-delay;
+}
+
+.bookcase__text {
+  align-self: flex-start;
+  font-family: "Verdana";
+  color: black;
+  opacity: 0;
+  
+  animation-name: emersion;
+  animation-duration: @duration-bookcase;
+  animation-delay: @delay-bookcase-text;
+  animation-fill-mode: forwards;
+}
+
+.bookcase__img {
+  //margin-bottom: 30px;
+  margin-right: 12px;
+  display: block;
+  height: 234px;
+  width: 68px;
+  
+  animation-name: bookcase;
+  animation-duration: 3s;
+  animation-delay: @delay-bookcase;
+  animation-fill-mode: backwards;
+}
+
+.bookcase__name {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bookcase__description {
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: -3px;
+}
+
+.bookcase__price {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
