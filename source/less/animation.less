@@ -1,6 +1,6 @@
 @keyframes book-2-animation {
-  40% {
-    transform: translate(15px, 2px);  
+  60% {
+    transform: translate(13px, 3px);  
   }
   100% {
     transform: rotate(15deg) translate(20px, 0);
@@ -8,13 +8,40 @@
 }
 
 @keyframes book-3-animation {
-  30% {
-    transform: translate(15px, 2px);  
+  60% {
+    transform: translate(20px, 6px); //20 8
   }
   100% {
-    transform: rotate(25deg) translate(70px, 20px);
+    transform: translate(50px, 40px) rotate(28deg);
+    //transform-origin: -50px bottom;
+  }
+} 
+
+/*
+@keyframes book-2-animation {
+  40% {
+    transform: translate(15px, 3px);  
+  }
+  100% {
+    transform: rotate(15deg) translate(20px, 0);
   }
 }
+
+@keyframes book-3-animation {
+  40% {
+    transform: translate(20px, 8px); //15 4
+  }
+  100% {
+    //transform: rotate(25deg) translate(70px, 18px);
+    //transform: translate(40px, -15px) rotate(25deg);
+    
+    //transform: rotate(30deg) translate(40px, -15px);
+    //transform-origin: -40px bottom;
+    
+    transform: rotate(28deg) translate(35px, -30px);
+    transform-origin: -50px bottom;
+  }
+} */
 
 @keyframes emersion {
   0% {
@@ -29,11 +56,13 @@
 @keyframes hide {
   0% {
     opacity: 1;
+    //outline: 1px solid red;
   }
   
-  50% {
+  99% {
     opacity: 0;
     height: 100%;
+    //right: 1000px;
   }
   
   100% {

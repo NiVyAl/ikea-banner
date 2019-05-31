@@ -12,9 +12,23 @@
       <div class="ikea__frame books">
         <h2 class="books__title">Чего стоит сохранить покой в доме?</h2>
         <div class="img-container img-container--book books__img-container">
-          <img src="img/book-3.png" width="140" class="img-container__img img-container__img--3">
-          <img src="img/book-2.png" width="115" class="img-container__img img-container__img--2">
-          <img src="img/book-1.png" width="98" class="img-container__img img-container__img--1">
+          <picture>
+            <source type="image/webp" srcset="img/book-3.webp 1x, img/book-3(retina).webp 2x">
+            
+            <img src="img/book-3.png" srcset="img/book-3(retina).png 2x" width="140" class="img-container__img img-container__img--3" alt="книги">
+          </picture>
+          
+          <picture>
+            <source type="image/webp" srcset="img/book-2.webp 1x, img/book-2(retina).webp 2x">
+            
+            <img src="img/book-2.png" srcset="img/book-2(retina).png 2x" width="115" class="img-container__img img-container__img--2" alt="книги">
+          </picture>
+          
+          <picture>
+            <source type="image/webp" srcset="img/book-1.webp 1x, img/book-1(retina).webp 2x">
+            
+            <img src="img/book-1.png" srcset="img/book-1(retina).png 2x" width="98" class="img-container__img img-container__img--1" alt="книги">
+          </picture>
         </div>
       </div>
       
@@ -24,7 +38,12 @@
           <p class="bookcase__description">стеллаж</p>
           <span class="bookcase__price">6499.-</span>
         </div>    
-        <img class="bookcase__img" src="img/bookcase.png">
+
+        <picture>
+          <source type="image/webp" srcset="img/bookcase.webp 1x, img/bookcase(retina).webp 2x">
+
+          <img src="img/bookcase.png" srcset="img/bookcase(retina).png 2x"   width="68" class="bookcase__img" alt="стеллаж Хемнэс">
+        </picture>
       </div>
       
       <div class="ikea__frame discover">
@@ -37,7 +56,7 @@
         </p>
       </div>
       
-      <img src="img/logo.png" class="logo ikea__logo">
+      <img src="img/logo.png" class="logo ikea__logo" alt="logo">
     </a>
   </body>
 </html>
