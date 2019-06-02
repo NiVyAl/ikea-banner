@@ -1,22 +1,26 @@
 .bookcase {
-  padding: 19px 23px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 75px;
+  //padding: 19px 23px;
+  
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: space-between;
+  //padding-bottom: 75px;
   
   animation-name: hide;
   animation-duration: @emersion-duration;
   animation-fill-mode: forwards;  
-  animation-delay: @bookcase-hide-delay;
+  animation-delay: @delay-bookcase-hide;
 }
 
 .bookcase__text {
-  align-self: flex-start;
+  //align-self: flex-start;
   font-family: "Verdana";
   color: black;
   opacity: 0;
+  padding-top: 5px;
+  //margin-left: 23px;
+  margin: 0 23px;
   
   animation-name: emersion;
   animation-duration: @duration-bookcase;
@@ -35,6 +39,9 @@
   animation-duration: 3s;
   animation-delay: @delay-bookcase;
   animation-fill-mode: backwards;
+  
+  margin: 0 auto;
+  margin-top: 14px;
 }
 
 .bookcase__name {
