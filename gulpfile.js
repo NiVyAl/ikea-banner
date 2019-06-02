@@ -5,15 +5,15 @@ var del = require("del");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var plumber = require("gulp-plumber");
-var uglify = require("gulp-uglify"); // для js
+var uglify = require("gulp-uglify");
 
 gulp.task("css", function() {
   return gulp.src("source/less/style.less")
-    .pipe(plumber()) // чтоб при ошибке не вырубался
+    .pipe(plumber())
     .pipe(less())
     .pipe(csso())
     .pipe(gulp.dest("build"))
-    .pipe(server.stream())    // чтоб при изменении в css сервер без перезагрузки страницы отображал изменения
+    .pipe(server.stream()) 
 });
 
 gulp.task("html", function() {
@@ -24,7 +24,7 @@ gulp.task("html", function() {
 
 gulp.task("scripts", function() {
   return gulp.src("source/scripts/**")
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest("build/scripts/"));
 });
 
@@ -41,7 +41,7 @@ gulp.task("clean", function() {
   return del("build");
 })
 
-gulp.task("refresh", function(done) { // done - чтоб бесконечно не перезагружалось
+gulp.task("refresh", function(done) {
   server.reload();
   done();
 })
